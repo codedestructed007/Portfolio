@@ -1,36 +1,40 @@
-# Personal Portfolio Website in React
+# 🚀 Welcome to My Portfolio Webpage 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Portfolio Screenshot](https://github.com/codedestructed007/Portfolio/assets/55931484/434fdef0-4278-4c48-ad8c-c37c1a051bdf)
 
-<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="https://user-images.githubusercontent.com/50160672/174933373-1ba6cadf-1c9a-48c3-aa58-984d0bd62d82.png">
+## About
+🚀 This is my personal portfolio webpage, showcasing my projects, skills, and experiences as a web developer. Here, you'll find a collection of my work, along with ways to connect with me.
 
-Built using:
+## Features
+✨ Detailed project descriptions.
+🛠 My skills and technologies.
+📬 A way to reach out to me.
 
-- Front-end library: React
-- CSS framework: React-bootstrap
-- CSS animations library: Animate.css
+## Technologies Used
+🚀 React.js
+🌐 HTML
+🎨 CSS
+💻 JavaScript
+📦 [Add more technologies you've used]
 
-In the /personal-portfolio, you can run:
+## Projects
+- 🍷 [Wine Quality Prediction](https://github.com/codedestructed007/Wine_Quality_prediction)
+- 🍺 [Alcohol Detection](https://github.com/codedestructed007/Drink_watch)
+- ❤️ [Heart Health Prediction](https://github.com/codedestructed007/Streamlit-heart_health)
 
-### `npm start`
+## Skills
+- 🐍 Python Programming
+- 📊 Exploratory Data Analysis
+- 🕸 Web Scraping
+- 🤖 Machine Learning (In-Depth Knowledge)
+- 📈 Statistics
+- 📝 Version Control
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Contact Me
+If you'd like to discuss a project, have a question, or simply want to say hello, feel free to connect with me through the following channels:
+- [LinkedIn](https://www.linkedin.com/in/satyamsharma61541425b)
+- [GitHub](https://github.com/codedestructed007)
+- 📝 [Medium](https://medium.com/@codexistslonglastingnotfog)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
+This project is open source and available under the [MIT License](LICENSE).
