@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
+// import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/linkedin.svg";
 import navIcon2 from "../assets/img/github.svg";
 import navIcon3 from "../assets/img/medium icon.svg";
@@ -18,7 +18,7 @@ export const Footer = () => {
               <a href="https://github.com/codedestructed007/codedestructed007"><img src={navIcon2} alt="Icon" /></a>
               <a href="https://medium.com/@codexistslonglastingnotfog"><img src={navIcon3} alt="Icon" /></a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            {/* <p>Copyright 2022. All Rights Reserved</p> */}
           </Col>
         </Row>
       </Container>

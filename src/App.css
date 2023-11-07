@@ -604,3 +604,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+/* CSS Styles */
+/* .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+} */
+
+.skill-box {
+  background-color: rgb(186, 52, 219);
+  color: #fff;
+  padding: 5px 50px;
+  border-radius: 20px;
+  font-size: 14px;
+}

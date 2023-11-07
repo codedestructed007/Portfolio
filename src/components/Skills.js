@@ -4,14 +4,15 @@ import meter2 from "../assets/img/PANDAS2ND.svg";
 import meter3 from "../assets/img/NUMPY.svg";
 import meter4 from "../assets/img/MACHINE_LEARNING.svg";
 import meter5 from "../assets/img/NLP.svg";
-import meter6 from "../assets/img/NLP.svg";
+// import meter6 from "../assets/img/NLP.svg";
 import meter7 from "../assets/img/STATISTICS.svg";
 import meter8 from "../assets/img/WEB_SCRAPPING.svg";
 import meter9 from "../assets/img/VERSION_CONTROL.svg";
-import meter10 from "../assets/img/STATISTICS.svg";
+import meter10 from "../assets/img/icons8-mysql.svg";
+import meter11 from "../assets/img/STATISTICS.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
+// import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 
@@ -79,6 +80,10 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter10} alt="" />
+                                <h5>MySQL</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter11} alt="" />
                                 <h5>Communication</h5>
                             </div>
                         </Carousel>

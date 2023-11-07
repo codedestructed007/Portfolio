@@ -1,12 +1,12 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/logo.svg';
+// import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/linkedin.svg';
 import navIcon2 from '../assets/img/github.svg';
 import navIcon3 from '../assets/img/medium icon.svg';
 // add more icon in the same way
-import { HashLink } from 'react-router-hash-link';
+// import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -54,8 +54,7 @@ export const NavBar = () => {
                 <a href="https://github.com/codedestructed007/codedestructed007"><img src={navIcon2} alt="" /></a>
                 <a href="https://medium.com/@codexistslonglastingnotfog"><img src={navIcon3} alt="" /></a>
               </div>
-              <a
-    href="" // Replace with the actual path to your CV
+              <a href="public\Rashmirathi.pdf" 
     download="Satyam_cv.pdf" // Specify the file name for the downloaded file
     className="vvd"
   >
