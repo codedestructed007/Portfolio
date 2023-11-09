@@ -1,14 +1,19 @@
 const express = require("express");
-const router = express.Router();
+const path = require("path");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 
-// server used to send send emails
 const app = express();
+const port = process.env.PORT || 5000;
+
 app.use(cors());
 app.use(express.json());
-app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
+
+// Serve static files from the 'build' folder (your React app)
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.listen(port, () => console.log(`Server Running on port ${port}`));
+
 console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
@@ -28,7 +33,8 @@ contactEmail.verify((error) => {
   }
 });
 
-router.post("/contact", (req, res) => {
+// Handle API requests
+app.post("/contact", (req, res) => {
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
@@ -49,4 +55,9 @@ router.post("/contact", (req, res) => {
       res.json({ code: 200, status: "Message Sent" });
     }
   });
+});
+
+// For any other requests, send the React app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });

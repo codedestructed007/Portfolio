@@ -1,4 +1,5 @@
 {
+  "homepage" : "https://codedestructed007.github.io/Portfolio",
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -25,7 +26,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "node server.js",
+    "predeploy": "npm run build",
+    "deploy" : "gh-pages -d build",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -49,6 +52,7 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "gh-pages": "^6.0.0"
   }
 }
