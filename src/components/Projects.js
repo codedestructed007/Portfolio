@@ -8,17 +8,21 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+import wine_quality_url from "../assets/videos/Wine quality prediction.mp4";
+import credit_card_url from "../assets/videos/Credit card default fast pace.mp4";
+import alcohol_url from "../assets/videos/alcohol_detection.mp4";
+
 export const Projects = () => {
  
   const projects = [
     {
-      title: "Red Wine",
+      title: "Red Wine Quality Prediction",
       description: "An interactive web app that predicts the quality of red wine based on its chemical properties.",
       imgUrl: projImg1,
       projectLink: "https://github.com/codedestructed007/Wine_Quality_prediction",
       featureSummary:"Wine Quality Prediction is an interactive web application that predicts the quality of red wine based on its chemical properties. Users can input data for wine features like fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol content. The application uses machine learning models to analyze this data and provide a prediction of the wine's quality.",
-      toolset : ['Python (OOPS)','Machine learning','Numpy','Matplotlib','Seaborn','Pandas','Flask','Docker','HTML','CSS','Logging','Error Handling'],
-      video_url : 'public/videos/alcohol_detection.mp4'
+      Video_title : "Wine quality Prediction webapp",
+      video_url : wine_quality_url
     },
     {
       title: "Alcohol Detection",
@@ -26,18 +30,18 @@ export const Projects = () => {
       imgUrl: projImg2,
       projectLink: "https://github.com/codedestructed007/Drink_watch",
       featureSummary: "Alcohol Detection is an AI-powered solution that detects signs of alcohol abuse in users by analyzing their medical history and behavior. This project focuses on utilizing machine learning to assess users' data, including age, weight, medical history, and behavior patterns. The system provides valuable insights into the likelihood of alcohol abuse based on this analysis.",
-      toolset : ['Python (OOPS)','Machine learning','Numpy','Seaborn','Pandas','Flask','Docker','HTML','CSS'],
-      video_url : 'public/videos/alcohol_detection.mp4'
+      Video_title : "Alcohol detection webapp on Azure",
+      video_url : alcohol_url
 
     },
     {
-      title: "Credit default",
+      title: "Credit Card default prediction",
       description: "A data-driven tool for predicting an individual's risk of credit card default based on their financial history and spending habits",
       imgUrl: projImg3,
       projectLink: "https://github.com/codedestructed007/CreditWatchdog",
       featureSummary:"Credit Card Default Prediction is an app that assesses the likelihood of credit card users defaulting on their payments. It uses machine learning models to analyze user data, including factors like credit history, payment behavior, and other financial indicators. The application provides valuable insights into the probability of credit card defaults.",
-      toolset : ['Python (OOPS)','Machine learning','Numpy','Seaborn','Pandas','Flask','Docker','HTML','CSS'],
-      video_url : 'public/videos/alcohol_detection.mp4'
+      Video_title : "Credit card default prediction Elastic Beanstalk",
+      video_url : credit_card_url
     }
   ];
 
@@ -72,7 +76,7 @@ export const Projects = () => {
                       <Nav.Link eventKey="second">Github links</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Skills</Nav.Link>
+                      <Nav.Link eventKey="third">Video Dems</Nav.Link>
                     </Nav.Item>
                     
                   </Nav>
@@ -107,21 +111,12 @@ export const Projects = () => {
                       <Row>
                         {projects.map((project, index) => (
                           <Col key={index}>
-                            <h4>{project.title}</h4>
-                            <p> {project.featureSummary}</p>
-                            <video id={`video-${index}`} width="100%" controls>
+                            <h4>{project.Video_title}</h4>
+                      
+                            <video width="210" height="280" controls>
                             <source src={project.video_url} type="video/mp4" />
-                            </video>
-                              <button onClick={() => playVideo(document.querySelector(`#video-${index}`))}>
-                              </button>
-
-
-
-                              {project.toolset.map((skill, skillIndex) => (
-                                <div key={skillIndex} className="skill-box">
-                                {skill}
-                              </div>
-                              ))}
+                          </video> 
+                              
                             
                           </Col>
                         ))}
